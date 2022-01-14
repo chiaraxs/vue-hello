@@ -1,8 +1,14 @@
 new Vue({
     el: '#app',
     data: {
-        message: 'Hello Vue!',
+        title: 'Hello Vue!',
         image: 'https://unsplash.it/600/300?image=538',
-        inputText: ''
+        inputText: '',
+        message: ''
+    },
+    methods: {
+        clicked: function () {
+            this.message = 'Ciao' + ' ' + this.inputText + '!';
+        }
     }
 });
